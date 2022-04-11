@@ -2,6 +2,19 @@
 
 This is official pytorch implementation of SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022).
 
+## Setup
+This work has been implemented on Ubuntu 20.04, Python 3.7, pytorch 1.7.1, CUDA 11.0 and GeForce RTX 3090 GPU.
+* Install python packages 
+```
+pip install -r requirements.txt
+```
+* Dataset (BBBC038v1)
+** Download the dataset from [the official website](https://bbbc.broadinstitute.org/BBBC038)
+** Preprocess code here [scribble2label](https://github.com/hvcl/scribble2label)
+* Dataset (MoNuSeg)
+```
+```
+
 ## Citation
 Please cite us if you use our work:
 ```
