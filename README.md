@@ -9,10 +9,23 @@ This work has been implemented on Ubuntu 20.04, Python 3.7, pytorch 1.7.1, CUDA 
 pip install -r requirements.txt
 ```
 * Dataset (BBBC038v1)
-    * Download the dataset from [the official website](https://bbbc.broadinstitute.org/BBBC038)
-    * Preprocess code here [scribble2label](https://github.com/hvcl/scribble2label)
-* Dataset (MoNuSeg)
+   * Download dataset from [official website](https://bbbc.broadinstitute.org/BBBC038)
+   * Preprocess code here [scribble2label](https://github.com/hvcl/scribble2label)
 ```
+/bin/bash preprocess_dataset.sh
+```
+* Dataset (MoNuSeg)
+   * Download dataset from [official website](https://monuseg.grand-challenge.org/Data/)
+   * Preprocess the dataset
+
+## Implementation
+* Training
+```
+python main.py
+```
+* Inference
+```
+python inference.py
 ```
 
 ## Citation
