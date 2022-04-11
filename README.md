@@ -1,8 +1,7 @@
-# ScribbleCont
+# SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022)
 
-This is official pytorch implementation of SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022).
-![Framework](./figure/framework.png){: width="100%"}
-![Result](./figure/result_figure.png)
+This is official pytorch implementation of **SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022)**. <br>
+<center><img src="./figure/framework.png" width="100%" height="100%"></center>
 
 ## Setup
 This work has been implemented on Ubuntu 20.04, Python 3.7, pytorch 1.7.1, CUDA 11.0 and GeForce RTX 3090 GPU.
