@@ -9,8 +9,8 @@ This work has been implemented on Ubuntu 20.04, Python 3.7, pytorch 1.7.1, CUDA 
 pip install -r requirements.txt
 ```
 * Dataset (BBBC038v1)
-** Download the dataset from [the official website](https://bbbc.broadinstitute.org/BBBC038)
-** Preprocess code here [scribble2label](https://github.com/hvcl/scribble2label)
+<br> ** Download the dataset from [the official website](https://bbbc.broadinstitute.org/BBBC038)
+<br> ** Preprocess code here [scribble2label](https://github.com/hvcl/scribble2label)
 * Dataset (MoNuSeg)
 ```
 ```
