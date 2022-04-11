@@ -1,7 +1,7 @@
 # ScribbleCont
 
 This is official pytorch implementation of SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022).
-![Framework](./figure/framework.png)
+<center>![Framework](./figure/framework.png){: width="100%" height="100%"}</center>
 ![Result](./figure/result_figure.png)
 
 ## Setup
