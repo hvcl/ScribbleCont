@@ -168,18 +168,18 @@ class Learner:
         if loss < self.best_loss:
             self.best_loss = loss
 
-        # if score > self.best_score:
-        #     self.best_score = score
-        #     self.best_epoch = self.epoch
+        if score > self.best_score:
+            self.best_score = score
+            self.best_epoch = self.epoch
 
-        #     self.model.eval()
-        #     torch.save({
-        #         'model_state_dict': self.model.state_dict(),
-        #         'optimizer_state_dict': self.optimizer.state_dict(),
-        #         'scheduler_state_dict': self.scheduler.state_dict(),
-        #         'best_score': self.best_score,
-        #         'epoch': self.epoch,
-        #     }, f'{os.path.join(self.cfg.log_dir, "best_model.pth")}')
+            self.model.eval()
+            torch.save({
+                'model_state_dict': self.model.state_dict(),
+                'optimizer_state_dict': self.optimizer.state_dict(),
+                'scheduler_state_dict': self.scheduler.state_dict(),
+                'best_score': self.best_score,
+                'epoch': self.epoch,
+            }, f'{os.path.join(self.cfg.log_dir, "best_model.pth")}')
 
     def load(self, path):
         checkpoint = torch.load(path)

@@ -16,15 +16,14 @@ class config:
     seed = 42
     name = 'MoNuSeg' # bright_field, histopathology, fluorescence, MoNuSeg
     device = torch.device('cuda:0')
-    scr = 'manual' # 10 30 50 100 manual (EM: only 10)
+    scr = 'manual'
     fold = 0
     """ Path """
     data_dir = f'./examples/images/{name}/'
     mask_dir = f'./examples/labels/{name}/full/'
-    df_path = f'./examples/labels/{name}/train.csv'
-    test_df_path = f'./examples/labels/{name}/test.csv'
-    scr_dir = f'./examples/labels/{name}/scribble_{scr}/'
-    log_dir = f'./logs/'
+    df_path  = f'./examples/labels/{name}/train.csv'
+    scr_dir  = f'./examples/labels/{name}/scribble_{scr}/'
+    log_dir  = f'./logs/'
     """ Training """
     n_epochs = 10000
     input_size = 256

@@ -1,9 +1,7 @@
-from logging import log
 import torch
 import torch.nn as nn
 import numpy as np
 from torch.nn.functional import binary_cross_entropy_with_logits, normalize
-from tqdm import tqdm
 
 
 def contrastive_loss4x4(projections, max_nsample, temperature, cu_labels=None):

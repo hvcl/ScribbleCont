@@ -12,7 +12,7 @@ from scripts.metric_mdice import Evaluator as mdice_evaluator
 from scripts.dataset import get_transforms, dsbTestDataset
 from model.model import UnetCustom
 
-''' Inference '''
+
 class config:
     seed = 42
     name = 'MoNuSeg' # bright_field, histopathology, fluorescence, MoNuSeg

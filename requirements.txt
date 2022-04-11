@@ -1,0 +1,18 @@
+# Basic
+numpy
+pathlib2
+scipy
+tqdm
+
+# Image
+scikit-image
+albumentations
+pyvips
+
+# Tabular
+pandas
+
+# Utils
+easydict
+tensorboard
+segmentation-models-pytorch
