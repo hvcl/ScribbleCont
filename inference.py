@@ -78,4 +78,4 @@ if __name__ == '__main__':
     else:
         save_dir = None
 
-    iou, mdice = inference(net, test_loader, save_dir)    
+    iou, mdice = inference(net, test_loader, save_dir)

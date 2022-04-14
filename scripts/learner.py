@@ -26,8 +26,11 @@ class Learner:
         self.cfg = cfg
         self.train_loader = train_loader
         self.valid_loader = valid_loader
-        self.model = model.to(self.cfg.device)
 
+        self.model = model.to(self.cfg.device)
+        self.projection_head_1x1 = projection_head_1x1.to(self.cfg.device)
+        self.projection_head_4x4 = projection_head_4x4.to(self.cfg.device)
+        
         self.logger = init_logger(self.cfg.log_dir, 'train_main.log')
         self.tb_logger = init_tb_logger(self.cfg.log_dir, 'train_main')
         self.log('\n'.join([f"{k} = {v}" for k, v in self.cfg.__dict__.items()]))
