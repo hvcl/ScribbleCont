@@ -88,10 +88,10 @@ class Learner:
                 cu_labels = torch.where(((mean < (1 - self.cfg.thr_conf)) |
                                         (mean > self.cfg.thr_conf)) &
                                         (scribbles == self.cfg.ignore_index),
-                                        mean,
-                                        self.cfg.ignore_index * torch.ones_like(scribbles).float()).to(self.cfg.device)
-                cu_labels[scribbles==0] = 0.
-                cu_labels[scribbles==1] = 1.
+                                        mean.round().long(),
+                                        self.cfg.ignore_index * torch.ones_like(scribbles)).to(self.cfg.device)
+                cu_labels[scribbles==0] = 0
+                cu_labels[scribbles==1] = 1
                 cu_labels = cu_labels.to(self.cfg.device)
 
                 projections_1x1 = self.projection_head_1x1(decoder_outputs)
