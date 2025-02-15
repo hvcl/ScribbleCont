@@ -1,4 +1,4 @@
-# SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022)
+# Scribble-supervised Cell Segmentation Using Multiscale Contrastive Regularization (ISBI 2022)
 
 This is official pytorch implementation of **SCRIBBLE-SUPERVISED CELL SEGMENTATION USING MULTISCALE CONTRASTIVE REGULARIZATION (ISBI 2022)**. <br>
 <center><img src="./figure/framework.png" width="100%" height="100%"></center>
